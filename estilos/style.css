@@ -26,3 +26,15 @@ nav > ul{
     display: flex;
     right: 50px;
 }
+
+.biografia{
+    height: 100vh;
+}
+
+.projetos{
+    height: 100vh;
+}
+
+.contatos{
+    height: 100vh;
+}
