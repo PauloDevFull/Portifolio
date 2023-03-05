@@ -6,17 +6,23 @@
 header{
     background-color: aqua;
     height: 100vh;
-
-}
-
-header > nav{
-    border: 1px solid black;
-    display: flex;
     width: 100vw;
 
 }
 
-ul{
+header > nav{
+    position: relative;
+    border: 1px solid black;
     display: flex;
-    align-items
+    width: 100vw;
+    height: 100px;
+
+    
+
+}
+
+nav > ul{
+    position: absolute;
+    display: flex;
+    right: 50px;
 }
