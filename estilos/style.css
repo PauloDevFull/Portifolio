@@ -4,6 +4,7 @@
 }
 
 header{
+    display: block;
     background-color: aqua;
     height: 100vh;
     width: 100vw;
@@ -16,15 +17,28 @@ header > nav{
     display: flex;
     width: 100vw;
     height: 100px;
-
-    
-
 }
 
 nav > ul{
     position: absolute;
     display: flex;
     right: 50px;
+}
+
+.home{
+    display: block;
+}
+
+.img-home{
+    position: relative;
+    display: flex;
+    top: 28.3vh;
+    justify-content: center;
+    align-self: center;
+}
+
+.img-home > img{
+    width: 100vw
 }
 
 .biografia{
