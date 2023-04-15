@@ -9,38 +9,44 @@
 </head>
 <body>
    
-    <header class="box-nav">
-        <nav>
-            <a href="#"><img class="img-nav" src="Imagens/Imagens perfil/Perfil-circle-200x200.jpeg" alt="Foto" width="100px"  title="Perfil/logo"></a>
-            <ul class="link-nav">
+    <header class="box">
+        <nav class="nav__box">
+            <img class="nav__img" src="Imagens/Imagens perfil/Perfil-circle-200x200.jpeg" alt="Foto" width="100px"  >
+            <ul class="nav__links">
                 <li>Home</li>
                 <li>sobre</li>
                 <li>Projetos</li>
                 <li>contatos</li>
             </ul>
         </nav>
-        <section class="home">
-            <div class="hello-home">
-                <h1>Ola, meu nome é</h1>
-                <h2>Paulo Henrique!</h2>
-                <h2>Desenvolvedor Front-end</h2>
-                <a href="#">LinkdIn</a>
-                <a href="#">GitHub</a>
-            </div>
-            <div class="img-home">
-                <img src="Imagens/principal-300x168.jpeg" alt="" >
-            </div>
-        </section>
-   
-        <section class="biografia">
-            <h2>Quem sou eu?</h2>
-            <p>
-                Como eu já me apresentei meu nome é <strong>Paulo</strong>, estou imigrando de carreira, militar onde trabalhei 8 anos na administração fazendo escala de serviços usando excel, documentações usando um sistema interno da constituição e controle do efetivo com disciplina e liderança sempre com respeito hierarquia, para desenvolver <strong>front-end</strong>, dominando e aperfeiçoando o <strong>HTML, CSS e JS</strong>.
-                <br> Estou disposto para trabalhar e me dedicar a empresa presencial ou home-oficce.
-            </p>
-            <a class="curriculo" href="#" download="curriculo-paulo-front end">curriculo</a>
-        </section>
     </header>
+    <hr>
+        
+        <main>
+            <section class="home__box">
+                <div class="home__hello">
+                    <h1>Ola, meu nome é</h1>
+                    <h2>Paulo Henrique!</h2>
+                    <h2>Desenvolvedor Front-end</h2>
+                    <div class="home__links">
+                        <a href="#">LinkdIn</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="home__img">
+                    <img src="Imagens/principal-300x168.jpeg" alt="" >
+                </div>
+            </section>
+            <section class="box__biography">
+                <h2 class="biography__title">Quem sou eu?</h2>
+                <p>
+                    Servi durante 8 anos entre esse período um professor que estava vendendo curso de linguagem Python me abordou e me apresentou o mundo da programação e resolvi estudar desenvolvimento web e virar um dev <strong>front-end</strong>, dominando e aperfeiçoando o <strong>HTML, CSS e JavaScript</strong>.
+                    <br> Estou disposto para trabalhar e me dedicar a empresa presencial ou home-oficce.
+                </p>
+                <a class="curriculo" href="curriculo.odt" download="curriculo.odt" title="Baixar">curriculo</a>
+            </section>
+        </main>
+    
     <section class="projetos">
         <h2>Meus Projetos.</h2>
     </section>
