@@ -56,6 +56,10 @@ header.box{
     
 }
 
+hr{
+    border: 1px solid var(--cor-secundaria);
+}
+
 .home__hello{
     display: flex;
     margin: auto;
