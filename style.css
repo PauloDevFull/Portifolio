@@ -1,0 +1,97 @@
+/* Resetando o CSS para começar do ZERO */
+@import url(assets/style/reset.css);
+
+/* Importado o style do menu */
+@import url(assets/style/menu-hamburg.css);
+
+/* Ferramentas palhetas de cores e fontes de texto */
+:root {
+    --cor-primaria: rgba(167, 168, 167, 0.414);
+    --cor-secundaria: black;
+    --cor-botao: rgba(30, 30, 30, 0.422);
+    --cor-hover: rgba(123, 119, 119, 0.496);
+
+    --fonte-secundaria: 'Krona One', sans-serif;
+    --fonte-primaria: 'Montserrat', sans-serif;
+}
+/* <Pagina principal (mobile)/> */
+body{
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--cor-primaria);
+    overflow: hidden;
+    height: 100vh;
+}
+.logo-ph{
+    margin: 10px;
+}
+.nav__img{
+    margin: auto;
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+section.home__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
+    margin: 0 20px;
+    padding: 2em;
+}
+img.nav__img{
+    display: block;
+    margin: auto;
+}
+.home__hello{
+    display: flex;
+    justify-content: center;
+}
+
+h1.home__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: 600;
+}
+.home__titulo span{
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn__links{
+    display: flex;
+    gap: 2em;
+    margin: auto;
+    
+}
+.btn{
+    display: flex;
+    gap: 5px;
+    background-color: var(--cor-botao);
+    font-family: var(--fonte-secundaria);
+    font-weight: 100;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--cor-secundaria);
+    transition: .5s;
+    padding: .3em 1em;
+    align-items: center;
+}
+.btn:hover{
+    box-shadow: 0 0 18px rgb(126, 124, 124) ;
+    background-color: var(--cor-hover);
+}
+
+.curriculo{
+    display: flex;
+    margin:1em auto;
+    overflow: hidden;
+    width: 6em;
+    height: 2em;
+}
+footer{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 12px;
+}
