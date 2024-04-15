@@ -8,12 +8,13 @@
     transition:.5s
 }
 .container_menu{
+    transition: .3s;
     position:absolute ;
     
 }
 .container_menu-hamburg{
     cursor: pointer;
-    margin: 20px 5px;
+    margin: 35px 5px;
     position:absolute;
     left: auto;
     right: 20px;
@@ -25,19 +26,18 @@
     display: none;  
 }
 
-.input-menu:checked + .container_menu-hamburg span:nth-child(2){
+.input-menu:checked ~ .container_menu-hamburg span:nth-child(2){
     transform: translatex(250%);
+    
 }
-.input-menu:checked + .container_menu-hamburg span:nth-child(1){
+.input-menu:checked ~ .container_menu-hamburg span:nth-child(1){
     transform: rotate(140deg);
     position:absolute ;
     
     
 }
-.input-menu:checked + .container_menu-hamburg span:nth-child(3){
+.input-menu:checked ~ .container_menu-hamburg span:nth-child(3){
     transform: rotate(40deg);
     position:absolute ;
-    
-   
-
 }
+

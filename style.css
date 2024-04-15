@@ -1,8 +1,11 @@
 /* Resetando o CSS para começar do ZERO */
 @import url(assets/style/reset.css);
 
-/* Importado o style do menu */
+/* Importado o style do menu-hamburg */
 @import url(assets/style/menu-hamburg.css);
+
+/* Importado o style do menu-hamburg */
+@import url(assets/style/prjetos.css);
 
 /* Ferramentas palhetas de cores e fontes de texto */
 :root {
@@ -20,11 +23,49 @@ body{
     font-size: 18px;
     font-weight: 400;
     background-color: var(--cor-primaria);
-    overflow: hidden;
-    height: 100vh;
+    overflow-x: hidden;
+    height: auto;
+}
+/* HOME */
+header{
+    display: flex;
+    
+}
+.menu-nav{
+    display: none;
+    gap: 2em;
+    padding: 2em;
+    margin: 0 5em 0 auto;
+}
+
+.nav-link{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--cor-secundaria);
+    height: 15px;
+    transition: .5s;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color: rgba(0, 0, 0, 0.599);
+     
+}
+.menu-nav{
+    
+    display: none;
+    align-items: center;
+}
+.menu-nav .btn{
+    justify-items: center;
+    padding: 10px 5px;
 }
 .logo-ph{
-    margin: 10px;
+    padding: 25px;
+}
+.container-home{
+    display: flex;
+    flex-direction: column;
 }
 .nav__img{
     margin: auto;
@@ -36,6 +77,7 @@ section.home__box{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 15px;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
     margin: 0 20px;
     padding: 2em;
@@ -49,7 +91,7 @@ img.nav__img{
     justify-content: center;
 }
 
-h1.home__titulo{
+.home__titulo{
     font-family: var(--fonte-primaria);
     font-size: 20px;
     font-weight: 600;
@@ -85,13 +127,134 @@ h1.home__titulo{
 
 .curriculo{
     display: flex;
-    margin:1em auto;
-    overflow: hidden;
+    margin:1em auto 4em auto;
     width: 6em;
     height: 2em;
 }
+
+.menu-nav_hamburg{
+    display: none;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.menu-nav_hamburg .links-hamburg{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.nav-link_hamburg{
+    margin: 1em;
+    font-size: 2em;
+}
+
+.input-menu:checked ~ .menu-nav_hamburg  {
+    display: flex;
+}
+.input-menu:checked ~ .container_menu-hamburg{
+    position: fixed;
+}
+/* FIM HOME */
+
+/* Sobre mim */
+.container_sobre-mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90VW;
+    height: 100vh;
+    margin: auto;
+    border: 0 solid var(--cor-primaria);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.texto_sobre-mim{
+    margin: 1em;
+}
+.texto_sobre-mim h2{
+    font-family: var(--fonte-secundaria);
+    margin: .5em 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* FIM Sobre mim */
+
+/* Projetos */
+.container_projetos{
+    width: 100VW;
+    height: auto;
+}
+.container_card-projetos{
+    margin-top: 1.5em;
+}
+.projetos{
+    margin: 2em
+}
+.card-projetos{
+    display: flex;
+    gap: 1em;
+}
+.display-reverso{
+    flex-direction: row-reverse;
+}
+.card-projetos h4{
+    display: flex;
+}
+.card-projetos p{
+    
+}
+.card-img{
+    display: flex;
+    margin: auto;
+    height: 350px;
+    width: 250px;
+}
+/* FIM Projeros */
+
+
 footer{
-    margin-top: 2em;
+    margin-top: 1em;
+    padding: 2em 0;
     text-align: center;
     font-size: 12px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.09) ;
 }
+
+@media screen and ( min-width: 700px){
+    .menu-hamburg{
+        display: none;
+    }
+    .menu-nav_hamburg{
+        display: none;
+    }
+
+    .menu-nav{
+        display: flex;
+    }
+    section.home__box{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 5em;
+        padding-bottom: 150px;
+    }
+    .container-home{
+        display: block;
+        margin: auto 0;
+        padding-top: 80px;
+        
+    }
+    .btn__links{
+        margin-top: 2em;
+    }
+    .home__titulo{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
