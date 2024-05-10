@@ -20,6 +20,7 @@
     right: 20px;
     top: 0;
     height: 40px;
+    z-index: 2;
     
 }
 .input-menu{
