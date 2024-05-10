@@ -27,6 +27,10 @@ body{
     height: auto;
 }
 /* HOME */
+.bg-card{
+    background-color: rgba(255, 255, 255, 0.419);
+    border: none;
+}
 header{
     display: flex;
     
@@ -79,8 +83,9 @@ section.home__box{
     gap: 20px;
     border-radius: 15px;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
-    margin: 0 20px;
+    margin: 0 auto;
     padding: 2em;
+    width: 90vw;
 }
 img.nav__img{
     display: block;
@@ -107,7 +112,8 @@ img.nav__img{
     margin: auto;
     
 }
-.btn{
+.btn_{
+    height: 2em;
     display: flex;
     gap: 5px;
     background-color: var(--cor-botao);
@@ -120,7 +126,7 @@ img.nav__img{
     padding: .3em 1em;
     align-items: center;
 }
-.btn:hover{
+.btn_:hover{
     box-shadow: 0 0 18px rgb(126, 124, 124) ;
     background-color: var(--cor-hover);
 }
@@ -128,7 +134,7 @@ img.nav__img{
 .curriculo{
     display: flex;
     margin:1em auto 4em auto;
-    width: 6em;
+    width: 8em;
     height: 2em;
 }
 
@@ -164,7 +170,7 @@ img.nav__img{
     flex-direction: column;
     align-items: center;
     width: 90VW;
-    height: 100vh;
+    
     margin: auto;
     border: 0 solid var(--cor-primaria);
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
@@ -175,7 +181,7 @@ img.nav__img{
 .texto_sobre-mim{
     margin: 1em;
 }
-.texto_sobre-mim h2{
+.h2{
     font-family: var(--fonte-secundaria);
     margin: .5em 0;
     font-size: 20px;
@@ -191,6 +197,8 @@ img.nav__img{
 }
 .container_card-projetos{
     margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 .projetos{
     margin: 2em
@@ -205,14 +213,22 @@ img.nav__img{
 .card-projetos h4{
     display: flex;
 }
-.card-projetos p{
-    
-}
 .card-img{
-    display: flex;
-    margin: auto;
-    height: 350px;
-    width: 250px;
+    
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    height: 300px;
+}
+.card1{
+    background-image: url(assets/Imagens/projetos/projeto-login.png) ;
+}
+.card2{
+    width: 900px;
+    background-image: url(assets/Imagens/projetos/timeOrgano.png);
+}
+.card3{
+
 }
 /* FIM Projeros */
 

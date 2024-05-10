@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/Imagens/imagens-icon/PH-LOGO.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Fonte family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +21,18 @@
         <a href="#"><img class="logo-ph" src="assets/Imagens/imagens-icon/PH-LOGO.png"  alt=""></a>
         
         <div class="menu-nav">
-            <a href="#" class="nav-link">Sobre</a>
-            <a href="#" class="nav-link">Projetos</a>
-            <a href="#" class="nav-link btn">Contate-me</a>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About me</a>
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link btn_"> contact me</a>
         </div><!-- menu-nav -->
         <input type="checkbox" name="menu-hamburg" id="menu-hamburg" class="input-menu">
             <div class="menu-nav_hamburg">
                 <div class="links-hamburg">
-                    <a href="#" class="nav-link nav-link_hamburg">Sobre</a>
+                    <a href="#" class="nav-link nav-link_hamburg">Home</a>
+                    <a href="#" class="nav-link nav-link_hamburg">About me</a>
                     <a href="#" class="nav-link nav-link_hamburg">Projetos</a>
-                    <a href="#" class="nav-link nav-link_hamburg btn">Contate-me</a>
+                    <a href="#" class="nav-link nav-link_hamburg btn_">Contact me</a>
                 </div>   
             </div><!-- menu-nav_hamburg -->
             
@@ -41,7 +45,9 @@
     </header>
 
     <main class="card-home">
+        
         <section class="home__box">
+            
             <div>
                 <img class="nav__img" src="assets/Imagens/Fotos_minha-edit.png" alt="Foto" width="100px"  >
             </div>
@@ -49,29 +55,57 @@
             <div class="container-home">
                 <div class="home__hello">
                     <h1 class="home__titulo">Ola, meu nome é<br/>
-                    Paulo Henrique<br/><span>Desenvolvedor Front-end.</span></h1><!-- home__titulo-->   
+                    Paulo Henrique<br/><span>Desenvolvedor Full Stack.</span></h1><!-- home__titulo-->   
                 </div><!-- home__hello -->
                 
                 <div class="btn__links">
-                    <a class="btn" href="https://www.linkedin.com/in/paulohdossantos/" target="_blank"><img src="assets/Imagens/imagens-icon/icone-linkedin.png" >LinkdIn</a>
-                    <a class="btn" href="https://github.com/Paulohenrique1996" target="_blank"><img src="assets/Imagens/imagens-icon/icone-github.png" >GitHub</a>
+                    <a class="btn_" href="https://www.linkedin.com/in/paulohdossantos/" target="_blank"><img src="assets/Imagens/imagens-icon/icone-linkedin.png" >LinkdIn</a>
+                    <a class="btn_" href="https://github.com/Paulohenrique1996" target="_blank"><img src="assets/Imagens/imagens-icon/icone-github.png" >GitHub</a>
                 </div><!-- home__link -->
             </div><!-- container-home -->
+            
                
         </section >
-            <div class="box__curriculo center"><a class="curriculo btn" href="assets/CV-Paulo_Henrique-04_2024.pdf" download="CV-Paulo_Henrique-04_2024.pdf">Curriculo</a></div>
+            <div class="box__curriculo center"><a class="curriculo btn_" href="assets/CV-Paulo_Henrique-04_2024.pdf" download="CV-Paulo_Henrique-04_2024.pdf">Curriculo</a></div>
         </section>
     </main>
     <section class="container_sobre-mim">
         <div class="texto_sobre-mim">
             <h2>Sobre mim</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla id dicta adipisci aperiam, eaque quaerat, cumque, non fugit quas dolor placeat ullam inventore maxime culpa libero iste repellendus eius. 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at repellendus pariatur natus cumque, dolore culpa illum modi expedita, itaque voluptatibus suscipit nesciunt doloremque autem eligendi, adipisci iure officia animi! 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde non quasi ab rerum ut eos quos! Nostrum quisquam labore aut tempora quo dolores, vero eum harum, saepe eos sed!
+                Estou disponivel a estágios, estou cursando Análise e Desenvolvimento de Sistemas, mergulhando de cabeça no mundo do desenvolvimento de software. Tenho uma paixão por aprender e por criar soluções digitais que impulsionam negócios e ajudam empreendedores a alcançar seus objetivos.
+                Minhas habilidades incluem JavaScript, TypeScript, Node.js, React e Bootstrap, que me permitem criar interfaces dinâmicas e funcionais. Além disso, tenho experiência em C#, MySQL, SQL , MongoDB e PHP, o que me dá uma base sólida para lidar com diversos desafios de desenvolvimento.               
+                Estou ansioso para aplicar meu conhecimento e minhas habilidades para contribuir com projetos inovadores e fazer a diferença no mundo do desenvolvimento de software.               
             </p>
         </div>
+        <div class="card container bg-card ">
+            <div class="card-body">
+                <form class=" bg-card" action="" method="post"></form>
+                    <h2 class="d-flex justify-content-center title">Deixe seu contato</h2>
+                    <div class="d-flex flex-column justify-content mt-3">
+                        <label for="empresa">Nome da empresa:</label>
+                        <input type="text" name="empresa" id="empresa">
+                    </div>
+                    <div class="d-flex flex-column justify-content-end mt-3">
+                        <label for="nome">nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="d-flex flex-column justify-content-end mt-3">
+                        <label for="email">email:</label>
+                        <input type="email" name="email" id="email  ">
+                    </div>
+                    <div class="d-flex flex-column justify-content-end mt-3">
+                        <label for="tel">tel:</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <button class="btn btn_ d-flex mx-auto mt-3" type="submit">Enviar contato</button>
+                </form> 
+            </div>
+            
+        </div>
+        
     </section>
+    
     <section class="container_projetos">
         <div class="projetos">
             <h3>Projetos</h3>
@@ -79,30 +113,26 @@
                 <h4>Projeto 1</h4>
                 <div class="card-projetos">
                     
-                    <img class="card-img" src="assets/Imagens/projetos/timeOrgano.png" alt="">
+                    <div class="card-img card1" >
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda impedit odio voluptatum accusamus quo aliquid voluptas facere asperiores saepe ut cum, sed reiciendis dolore! Fugiat illum veritatis repellendus aut?
                     </p>
                     
                 </div>
             </div>    
-            <div class="container_card-projetos">
-                <h4>Projeto 2</h4>
-                <div class="card-projetos display-reverso">
-                    
-                    <img class="card-img" src="assets/Imagens/projetos/timeOrgano.png" alt="">
+            <h4>Projeto 2</h4>
+            <div class="card-img card2">
+                
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda impedit odio voluptatum accusamus quo aliquid voluptas facere asperiores saepe ut cum, sed reiciendis dolore! Fugiat illum veritatis repellendus aut?
                     </p>
-                    
-                </div>
             </div>    
                 
-            <div class="container_card-projetos">
+            <div class="card-img card3">
                 <h4>Projeto 3</h4>
                 <div class="card-projetos">
                     
-                    <img class="card-img" src="assets/Imagens/projetos/timeOrgano.png" alt="">
+                    
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda impedit odio voluptatum accusamus quo aliquid voluptas facere asperiores saepe ut cum, sed reiciendis dolore! Fugiat illum veritatis repellendus aut?
                     </p>
