@@ -212,6 +212,13 @@ section.container_projeto .interface .d-flex{
    border-radius: 40px; 
    position: relative;
 }
+.container-cards{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
 .nome-projeto{
     background-color: var(--cor-primaria);
     position: absolute;
@@ -280,8 +287,11 @@ footer{
         font-size: 30px;
         font-weight: 600;
     }
-    .section.container_projeto .interface .d-flex{
-        flex-direction: column;
+    .container-cards{
+        
+        flex-direction: row;
+        
+        
     }
 }
 
