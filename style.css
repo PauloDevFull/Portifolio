@@ -17,6 +17,22 @@
     --fonte-secundaria: 'Krona One', sans-serif;
     --fonte-primaria: 'Montserrat', sans-serif;
 }
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 40px;
+    font-weight: 600;
+    padding: .5em;
+}
+.titulo-aux{
+    color: var(--cor-botao);
+    padding-left: 5px;
+}
+.border-radiuns-40{
+    display: none;
+}
 /* <Pagina principal (mobile)/> */
 body{
     font-family: var(--fonte-primaria);
@@ -71,7 +87,9 @@ header{
     display: flex;
     flex-direction: column;
 }
-.nav__img{
+
+.img{
+    display: flex;
     margin: auto;
     width: 200px;
     border-radius: 20px;
@@ -90,6 +108,9 @@ section.home__box{
 img.nav__img{
     display: block;
     margin: auto;
+}
+.hiden{
+    display: none;
 }
 .home__hello{
     display: flex;
@@ -170,7 +191,6 @@ img.nav__img{
     flex-direction: column;
     align-items: center;
     width: 90VW;
-    
     margin: auto;
     border: 0 solid var(--cor-primaria);
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
@@ -180,12 +200,7 @@ img.nav__img{
 
 .texto_sobre-mim{
     margin: 1em;
-}
-.h2{
-    font-family: var(--fonte-secundaria);
-    margin: .5em 0;
-    font-size: 20px;
-    font-weight: 600;
+    width: 70vw;
 }
 
 /* FIM Sobre mim */
@@ -197,6 +212,7 @@ img.nav__img{
     width: 90VW;
     border-radius: 15px;
     margin: auto;
+    height: auto;
 }
 section.container_projeto .interface .d-flex{
     justify-content: space-around;
@@ -216,7 +232,9 @@ section.container_projeto .interface .d-flex{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    align-items: center;
+    gap: 80px;
+    margin: 2em;
     
 }
 .nome-projeto{
@@ -241,12 +259,46 @@ section.container_projeto .interface .d-flex{
     background-position: 100% 0%;
     transition: 8s;
 }
+.container-conhecimento{
+    width: auto;
+    height: auto;
+}
+.container-skill{
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em auto 3em auto;
+    width: 50vw;
+    height: auto;
+    flex-wrap: wrap;
+}
+div.img-skill{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+div.img-skill:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px var(--cor-hover);
+}
 
 
 
 
 /* FIM Projeros */
-
+/* contato */
+.container-contato{
+    border: 0 solid var(--cor-primaria);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.329) ;
+    width: 90VW;
+    border-radius: 15px;
+    margin: auto;
+    height: auto;
+}
 
 footer{
     margin-top: 1em;
@@ -256,7 +308,14 @@ footer{
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.09) ;
 }
 
-@media screen and ( min-width: 700px){
+@media screen and ( min-width: 900px){
+    .border-radiuns-40{
+        display: flex;
+        border-radius: 40px;
+    }
+    header{
+        margin-left: 50px;
+    }
     .menu-hamburg{
         display: none;
     }
@@ -287,11 +346,19 @@ footer{
         font-size: 30px;
         font-weight: 600;
     }
-    .container-cards{
-        
-        flex-direction: row;
-        
-        
+
+    .texto_sobre-mim{
+        margin: 1em;
+        width: 35vw;
     }
+    .hiden{
+        display: flex;
+    }
+    .container-cards{
+        flex-direction: row;
+    }
+    
+
+    
 }
 

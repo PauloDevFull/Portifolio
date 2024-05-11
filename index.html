@@ -49,7 +49,7 @@
         <section class="home__box">
             
             <div>
-                <img class="nav__img" src="assets/Imagens/Fotos_minha-edit.png" alt="Foto" width="100px"  >
+                <img class="img" src="assets/Imagens/Fotos_minha-edit.png" alt="Foto" width="200px"  >
             </div>
             
             <div class="container-home">
@@ -70,45 +70,48 @@
         </section>
     </main>
     <section class="container_sobre-mim">
-        <div class="texto_sobre-mim m-5">
-            <h2>Sobre mim</h2>
-            <p>
-                Estou disponivel a estágios, estou cursando Análise e Desenvolvimento de Sistemas, mergulhando de cabeça no mundo do desenvolvimento de software. Tenho uma paixão por aprender e por criar soluções digitais que impulsionam negócios e ajudam empreendedores a alcançar seus objetivos.
-                Minhas habilidades incluem JavaScript, TypeScript, Node.js, React e Bootstrap, que me permitem criar interfaces dinâmicas e funcionais. Além disso, tenho experiência em C#, MySQL, SQL , MongoDB e PHP, o que me dá uma base sólida para lidar com diversos desafios de desenvolvimento.               
+        <h2 class="titulo">Sobre <span class="titulo-aux">mim</span> </h2>
+        <div class=" d-flex">
+            <div>
+                <img class="border-radiuns-40" src="assets/Imagens/Imagens perfil/img-principal.jpeg" alt="Foto" width="400px"  >
+                
+            </div>
+            <p class="texto_sobre-mim">
+                Sou um profissional e eterno aluno cursando Análise e Desenvolvimento de Sistemas, mergulhando de cabeça no mundo do desenvolvimento web e software. Tenho uma paixão por aprender e por criar soluções digitais que impulsionam negócios e ajudam empreendedores a alcançar seus objetivos.
+                Meus Conhecimentos me permitem criar interfaces dinâmicas e funcionais. Além disso, tenho experiências que me dá uma base sólida para lidar com diversos desafios de desenvolvimento.               
                 Estou ansioso para aplicar meu conhecimento e minhas habilidades para contribuir com projetos inovadores e fazer a diferença no mundo do desenvolvimento de software.               
             </p>
-        </div>
-        <div class="card container bg-card mb-5">
-            <div class="card-body">
-                <form class=" bg-card" action="" method="post"></form>
-                    <h2 class="d-flex justify-content-center title">Deixe seu contato</h2>
-                    <div class="d-flex flex-column justify-content mt-3">
-                        <label for="empresa">Nome da empresa:</label>
-                        <input type="text" name="empresa" id="empresa">
-                    </div>
-                    <div class="d-flex flex-column justify-content-end mt-3">
-                        <label for="nome">nome:</label>
-                        <input type="text" name="nome" id="nome">
-                    </div>
-                    <div class="d-flex flex-column justify-content-end mt-3">
-                        <label for="email">email:</label>
-                        <input type="email" name="email" id="email  ">
-                    </div>
-                    <div class="d-flex flex-column justify-content-end mt-3">
-                        <label for="tel">tel:</label>
-                        <input type="tel" name="tel" id="tel">
-                    </div>
-                    <button class="btn btn_ d-flex mx-auto mt-3" type="submit">Enviar contato</button>
-                </form> 
-            </div>
             
+
         </div>
+        <section class="container-conhecimento">
+            <h2 class="titulo">Conhecimentos</h2>
+            <div class="container-skill">
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-javascript.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-ts.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-nodejs.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-react.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-html.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-css.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-bootstrap.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-sass.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-php.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-sql.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-mongodb.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-c.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-git.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-github.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-.png);"></div>
+                <div class="img-skill" style="background-image: url(assets/Imagens/imagens-icon/skill-.png);"></div>
+            </div>
+        </section>
+        
         
     </section>
     
-    <section class="container_projeto">
+    <section class="container_projeto mt-5">
         <div class="interface">
-            <h2>Meus Projetos</h2>
+            <h2 class="titulo">Meus <span class="titulo-aux">Projetos</span></h2>
             <div class="container-cards">
                 <div class="card-projeto" style="background-image: url(assets/Imagens/projetos/timeOrgano.png);">
                     <div class="nome-projeto">Projeto 1</div>
@@ -122,6 +125,37 @@
             </div>
         </div>
     </section> <!-- container_projetos -->
+    <section class="container-contato">
+        <div class="container bg-card mb-5">
+            <h2 class="titulo">contato</h2>
+
+            <div class="">
+                <form class=" bg-card" action="" method="post"></form>
+                    <h2 class="titulo">Deixe seu contato</h2>
+                    <div class="container-conatos">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-end mt-3">
+                        <label for="nome">nome:</label>
+                        <input type="text" disabled name="nome" id="nome" placeholder="Está desativado temporariamente">
+                    </div>
+                    <div class="d-flex flex-column justify-content-end mt-3">
+                        <label for="email">email:</label>
+                        <input type="email" disabled name="email" id="email" placeholder="Está desativado temporariamente">
+                    </div>
+                    <div class="d-flex flex-column justify-content-end mt-3">
+                        <label for="tel">tel:</label>
+                        <input type="tel" disabled name="tel" id="tel" placeholder="Está desativado temporariamente">
+                    </div>
+                    <button class="btn btn_ d-flex mx-auto mt-3" type="submit">Enviar contato</button>
+                </form> 
+            </div>
+        </div>
+        
+    </section>
     <footer>
         <h2 class="rodape">&copy;By: Paulo Henrique</h2>
     </footer>
