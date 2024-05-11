@@ -352,6 +352,22 @@ footer{
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.09) ;
 }
 
+.voltar{
+    position: fixed;
+    background-image: url(assets/Imagens/imagens-icon/setas-para-cima.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    top: 85%;
+    left: 1%;
+    transition: 1s;
+    cursor: pointer;
+}
+.voltar:hover{
+    top: 80%;
+
+}
+
 @media screen and ( min-width: 900px){
     .border-radiuns-40{
         display: flex;
