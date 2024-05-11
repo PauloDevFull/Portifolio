@@ -251,6 +251,10 @@ section.container_projeto .interface .d-flex{
    border-radius: 40px; 
    position: relative;
 }
+.card-projeto:hover{
+    background-position: 100% 100%;
+    transition: 6s;
+}
 .container-cards{
     display:flex;
     flex-direction: column;
@@ -278,10 +282,7 @@ section.container_projeto .interface .d-flex{
 .nome-projeto:hover{
     opacity: 1;
 }
-.card-projeto:hover{
-    background-position: 100% 0%;
-    transition: 8s;
-}
+
 .container-conhecimento{
     width: auto;
     height: auto;
