@@ -357,7 +357,8 @@ footer{
     background-image: url(assets/Imagens/imagens-icon/setas-para-cima.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 90px;
+    color: black;
+    width: 70px;
     top: 85%;
     left: 1%;
     transition: 1s;
